@@ -1,0 +1,27 @@
+<testsuite failures="0" name="src/test/java/com/api/automation/getResponse.feature" skipped="0" tests="2" time="0.582194">
+  <testcase classname="src.test.java.com.api.automation.getResponse" name="To fetch the response of all the job decriptions using Http getAll Endpoint in Json Format" time="0.458691">
+    <system-out>Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/json" .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.com.api.automation.getResponse" name="To fetch the response of all the job decriptions using Http getAll Endpoint in Xml Format" time="0.123503">
+    <system-out>Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/json" .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/xml" ..................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

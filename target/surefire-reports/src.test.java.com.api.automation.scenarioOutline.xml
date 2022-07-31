@@ -1,0 +1,33 @@
+<testsuite failures="0" name="src/test/java/com/api/automation/scenarioOutline.feature" skipped="0" tests="2" time="0.455371">
+  <testcase classname="src.test.java.com.api.automation.scenarioOutline" name="To validate the full response body using Http getAll Endpoint in Json Format 297" time="0.437">
+    <system-out>Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/add" ............................................ passed
+And headers {Accept : "application/json" , Content-Type : "application/json"} . passed
+* def requestBody = read('../resources/jsonRequestBody.json') ............. passed
+And request requestBody ................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.com.api.automation.scenarioOutline" name="To validate the full response body using Http getAll Endpoint in Json Format 400" time="0.018371">
+    <system-out>Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/add" ............................................ passed
+And headers {Accept : "application/json" , Content-Type : "application/json"} . passed
+* def requestBody = read('../resources/jsonRequestBody.json') ............. passed
+And request requestBody ................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/add" ............................................ passed
+And headers {Accept : "application/json" , Content-Type : "application/json"} . passed
+* def requestBody = read('../resources/jsonRequestBody.json') ............. passed
+And request requestBody ................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

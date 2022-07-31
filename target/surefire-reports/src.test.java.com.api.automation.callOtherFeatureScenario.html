@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.com.api.automation.callOtherFeatureScenario</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-07-27 12:44:19 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:7]">[1:7] To validate the full response body using Http getAll Endpoint in Json Format </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/com/api/automation/callOtherFeatureScenario.feature</span><span class="feature-description">To post the request body to add new job description</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:7]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">To validate the full response body using Http getAll Endpoint in Json Format </span>
+</div>
+<div class="scenario-time passed">ms: 648</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:7]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">Given url 'http://localhost:9191'</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="1">00:44:18.586 karate.env system property was:</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">And print '====== base url ======'</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="2">00:44:18.699 [print] ====== base url ======</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">* def context = call read('postRequest.feature')</div>
+</div>
+<div class="time-cell passed">595</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-cell passed">/Users/chibendi/NASA/KarateTutorials/karateApiAutomation/src/test/java/com/api/automation/postRequest.feature</div>
+</div>
+<div class="time-cell passed">462</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url 'http://localhost:9191/'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print '====== base url ======'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="5">00:44:18.835 [print] ====== base url ======</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path "normal/webapi/add"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And headers {Accept : "application/json" , Content-Type : "application/json"}</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def getRandomValue = function(){ return Math.floor((Math.random() * 10) + 1)}</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jobId = getRandomValue()</div>
+</div>
+<div class="time-cell passed">21</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print jobId</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="10">00:44:18.865 [print] 10.0</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def requestBody = read('../resources/jsonRequestBody.json')</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request requestBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">415</div>
+</div>
+<div class="preformatted" data-parent="13">00:44:19.265 request:
+1 &gt; POST http://localhost:9191/normal/webapi/add
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 231
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:9191
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+{"jobId":10.0,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]}
+
+00:44:19.292 response time in milliseconds: 26.45
+1 &lt; 201
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 26 Jul 2022 19:14:19 GMT
+1 &lt; Expires: 0
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Pragma: no-cache
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+{"jobId":10,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]}</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="15">00:44:19.293 [print] {
+  "jobId": 10,
+  "jobTitle": "Software Engg -2",
+  "project": [
+    {
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Pega"
+      ],
+      "projectName": "Movie App"
+    }
+  ],
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron"
+  ]
+}</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">And print context.jobId</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="preformatted" data-parent="16">00:44:19.304 [print] 10.0</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Given path "/normal/webapi/update"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">And headers {Accept : "application/json" , Content-Type : "application/json"}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="19">{
+  "jobId": '#(context.jobId)',
+  "jobTitle": "Software Engg -5",
+  "project": [
+{
+  "technology": [
+    "Kotlin",
+    "SQL Lite",
+    "Gradle",
+    "Pega"
+  ],
+  "projectName": "Movie App"
+},
+   {
+  "technology": [
+    "Node Js",
+    "Html",
+    "Css",
+    "MongoDb"
+  ],
+  "projectName": "Web App"
+}
+  ],
+  "jobDescription": "To develop andriod application and web application",
+  "experience": [
+"Google",
+"Apple",
+"Mobile Iron"
+  ]
+}</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="preformatted" data-parent="20">00:44:19.312 request:
+1 &gt; PUT http://localhost:9191/normal/webapi/update
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 325
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:9191
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+{"jobId":10.0,"jobTitle":"Software Engg -5","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"},{"technology":["Node Js","Html","Css","MongoDb"],"projectName":"Web App"}],"jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"]}
+
+00:44:19.317 response time in milliseconds: 4.80
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 26 Jul 2022 19:14:19 GMT
+1 &lt; Expires: 0
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Pragma: no-cache
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+{"jobId":10,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]}</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="22">00:44:19.317 [print] {
+  "jobId": 10,
+  "jobTitle": "Software Engg -5",
+  "project": [
+    {
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Pega"
+      ],
+      "projectName": "Movie App"
+    },
+    {
+      "technology": [
+        "Node Js",
+        "Html",
+        "Css",
+        "MongoDb"
+      ],
+      "projectName": "Web App"
+    }
+  ],
+  "jobDescription": "To develop andriod application and web application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron"
+  ]
+}</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">* def actualResponse = karate.jsonPath(response,"$[?(@.jobId == "+ context.jobId+")]")</div>
+</div>
+<div class="time-cell passed">19</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">And print actualResponse</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="24">00:44:19.337 [print] [
+  {
+    "jobId": 10,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  }
+]</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

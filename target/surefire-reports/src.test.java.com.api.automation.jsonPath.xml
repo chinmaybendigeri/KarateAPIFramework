@@ -1,0 +1,13 @@
+<testsuite failures="0" name="src/test/java/com/api/automation/jsonPath.feature" skipped="0" tests="1" time="0.455411">
+  <testcase classname="src.test.java.com.api.automation.jsonPath" name="To validate the responses using  Json Path" time="0.455411">
+    <system-out>Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/json" .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def filteredResponse = karate.jsonPath(response,"$[?(@.jobId == 1)]") ... passed
+And print filteredResponse ................................................ passed</system-out>
+  </testcase>
+</testsuite>

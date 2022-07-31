@@ -1,0 +1,1796 @@
+13:20:14.725 karate.env system property was:  
+13:20:14.783 [print] ====== base url ======
+13:20:15.168 request:
+1 > GET http://localhost:9191/normal/webapi/all
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9191
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+
+13:20:15.204 response time in milliseconds: 33.96
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sat, 30 Jul 2022 07:50:15 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}]
+
+t-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]}
+
+07:29:51.726 [print] {
+  "jobId": 297,
+  "jobTitle": "Software Engg -2",
+  "project": [
+    {
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Pega"
+      ],
+      "projectName": "Movie App"
+    }
+  ],
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron"
+  ]
+}
+
+07:29:51.735 karate.env system property was:  
+07:29:51.736 [print] ====== base url ======
+07:29:51.738 request:
+1 > GET http://localhost:9191/normal/webapi/all
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9191
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+
+07:29:51.743 response time in milliseconds: 4.21
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 27 Jul 2022 01:59:51 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":6,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":5,"jobTitle":"Software Engg -3","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":6,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":2,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":3,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":10,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":10,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":4,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":6,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":8,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":2,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":7,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":8,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":9,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]}]
+
+07:29:51.882 karate.env system property was:  
+07:29:51.883 [print] ====== base url ======
+07:29:51.885 request:
+1 > GET http://localhost:9191/normal/webapi/all
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9191
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+
+07:29:51.892 response time in milliseconds: 4.10
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 27 Jul 2022 01:59:51 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":6,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":5,"jobTitle":"Software Engg -3","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":6,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":2,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":10,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":10,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":4,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":6,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":8,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":2,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":7,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":8,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":9,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":3,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]}]
+
+07:29:51.898 [print] [
+  {
+    "jobId": 1,
+    "jobTitle": "Software Engg",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 6,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 5,
+    "jobTitle": "Software Engg -3",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 6,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 2,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 10,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 10,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 4,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 6,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 8,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 2,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 7,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 8,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 9,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 3,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  }
+]
+
+cation</jobDescription>
+    <experience>
+      <experience>Google</experience>
+      <experience>Apple</experience>
+      <experience>Mobile Iron</experience>
+    </experience>
+    <project>
+      <project>
+        <projectName>Movie App</projectName>
+        <technology>
+          <technology>Kotlin</technology>
+          <technology>SQL Lite</technology>
+          <technology>Gradle</technology>
+          <technology>Pega</technology>
+        </technology>
+      </project>
+      <project>
+        <projectName>Web App</projectName>
+        <technology>
+          <technology>Node Js</technology>
+          <technology>Html</technology>
+          <technology>Css</technology>
+          <technology>MongoDb</technology>
+        </technology>
+      </project>
+    </project>
+  </item>
+</List>
+
+07:26:36.112 karate.env system property was:  
+07:26:36.120 [print] ====== base url ======
+07:26:36.148 [print] ====== base url ======
+07:26:36.153 [print] 9.0
+07:26:36.159 request:
+1 > POST http://localhost:9191/normal/webapi/add
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 230
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:9191
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+{"jobId":9.0,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]}
+
+07:26:36.165 response time in milliseconds: 4.92
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 27 Jul 2022 01:56:36 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"jobId":9,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]}
+
+07:26:36.166 [print] {
+  "jobId": 9,
+  "jobTitle": "Software Engg -2",
+  "project": [
+    {
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Pega"
+      ],
+      "projectName": "Movie App"
+    }
+  ],
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron"
+  ]
+}
+
+07:26:36.176 [print] 9.0
+07:26:36.184 request:
+1 > PUT http://localhost:9191/normal/webapi/update
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 324
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:9191
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+{"jobId":9.0,"jobTitle":"Software Engg -5","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"},{"technology":["Node Js","Html","Css","MongoDb"],"projectName":"Web App"}],"jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"]}
+
+07:26:36.189 response time in milliseconds: 4.87
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 27 Jul 2022 01:56:36 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"jobId":9,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]}
+
+07:26:36.190 [print] {
+  "jobId": 9,
+  "jobTitle": "Software Engg -5",
+  "project": [
+    {
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Pega"
+      ],
+      "projectName": "Movie App"
+    },
+    {
+      "technology": [
+        "Node Js",
+        "Html",
+        "Css",
+        "MongoDb"
+      ],
+      "projectName": "Web App"
+    }
+  ],
+  "jobDescription": "To develop andriod application and web application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron"
+  ]
+}
+
+07:26:36.195 [print] [
+  {
+    "jobId": 9,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  }
+]
+
+07:26:36.204 karate.env system property was:  
+07:26:36.205 [print] ====== base url ======
+07:26:36.207 request:
+1 > GET http://localhost:9191/normal/webapi/all
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9191
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+
+07:26:36.212 response time in milliseconds: 4.52
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 27 Jul 2022 01:56:36 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":6,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":5,"jobTitle":"Software Engg -3","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":6,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":2,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":3,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":10,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":10,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":4,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":6,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":8,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":2,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":7,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":9,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]}]
+
+07:26:36.215 [print] [
+  {
+    "jobId": 1,
+    "jobTitle": "Software Engg",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 6,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 5,
+    "jobTitle": "Software Engg -3",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 6,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 2,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 3,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 10,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 10,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 4,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 6,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 8,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 297,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 2,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 7,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 400,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 9,
+    "jobTitle": "Software Engg -5",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      },
+      {
+        "technology": [
+          "Node Js",
+          "Html",
+          "Css",
+          "MongoDb"
+        ],
+        "projectName": "Web App"
+      }
+    ],
+    "jobDescription": "To develop andriod application and web application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  }
+]
+
+07:26:36.217 assertion failed: path: $, actual: [{"jobId":1,"jobTitle":"Software Engg","project":[{"technology":["Kotlin","SQL Lite","Gradle"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":297,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":400,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":6,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":5,"jobTitle":"Software Engg -3","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"},{"technology":["Node Js","Html","Css","MongoDb"],"projectName":"Web App"}],"jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"]},{"jobId":6,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":400,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":297,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":297,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":400,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":400,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":297,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":2,"jobTitle":"Software Engg -5","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"},{"technology":["Node Js","Html","Css","MongoDb"],"projectName":"Web App"}],"jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"]},{"jobId":400,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":3,"jobTitle":"Software Engg -5","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"},{"technology":["Node Js","Html","Css","MongoDb"],"projectName":"Web App"}],"jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"]},{"jobId":297,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":10,"jobTitle":"Software Engg -5","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"},{"technology":["Node Js","Html","Css","MongoDb"],"projectName":"Web App"}],"jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"]},{"jobId":10,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":297,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":400,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":4,"jobTitle":"Software Engg -5","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"},{"technology":["Node Js","Html","Css","MongoDb"],"projectName":"Web App"}],"jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"]},{"jobId":6,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":297,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":400,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":8,"jobTitle":"Software Engg -5","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"},{"technology":["Node Js","Html","Css","MongoDb"],"projectName":"Web App"}],"jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"]},{"jobId":297,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":2,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":7,"jobTitle":"Software Engg -5","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"},{"technology":["Node Js","Html","Css","MongoDb"],"projectName":"Web App"}],"jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"]},{"jobId":400,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":9,"jobTitle":"Software Engg -5","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"},{"technology":["Node Js","Html","Css","MongoDb"],"projectName":"Web App"}],"jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"]}], expected: [{"jobId":1,"jobTitle":"Software Engg","project":[{"technology":["Kotlin","SQL Lite","Gradle"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]}], reason: actual and expected arrays are not the same size - 30:1
+07:26:36.228 karate.env system property was:  
+07:26:36.229 [print] ====== base url ======
+07:26:36.231 request:
+1 > GET http://localhost:9191/normal/webapi/all
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9191
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+
+07:26:36.236 response time in milliseconds: 3.51
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 27 Jul 2022 01:56:36 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":6,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":5,"jobTitle":"Software Engg -3","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":6,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":2,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":3,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":10,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":10,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":4,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":6,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":8,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":297,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":2,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":7,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]},{"jobId":400,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]},{"jobId":9,"jobTitle":"Software Engg -5","jobDescription":"To develop andriod application and web application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]},{"projectName":"Web App","technology":["Node Js","Html","Css","MongoDb"]}]}]
+

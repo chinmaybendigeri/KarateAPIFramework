@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.com.api.automation.fileUpload</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-07-26 11:19:00 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:6]">[1:6] To upload the file present locally </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/com/api/automation/fileUpload.feature</span><span class="feature-description">To upload a file using post end point</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:6]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">To upload the file present locally </span>
+</div>
+<div class="scenario-time passed">ms: 548</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:6]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:6]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">Given url 'http://localhost:9191'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="1">23:19:00.160 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">Given path "/normal/webapi/upload"</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">And multipart file file = { read : "../resources/dynamicJsonResponse.json", filename : "dynamicJsonResponse.json", Content-type : "multipart/form"}</div>
+</div>
+<div class="time-cell passed">178</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">362</div>
+</div>
+<div class="preformatted" data-parent="4">23:19:00.737 request:
+1 &gt; POST http://localhost:9191/normal/webapi/upload
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 694
+1 &gt; Content-Type: multipart/form-data; boundary=TWONbuu-tUABkQEBsEJaZpXFAL4j_P8QuZix
+1 &gt; Host: localhost:9191
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+
+23:19:00.767 response time in milliseconds: 28.41
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 26 Jul 2022 17:49:00 GMT
+1 &lt; Expires: 0
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Pragma: no-cache
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+{"message":"File dynamicJsonResponse.json uploaded at /var/folders/yp/fyqk4wpn64v2n0rmd040fw180000gn/T//"}</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="6">23:19:00.769 [print] {
+  "message": "File dynamicJsonResponse.json uploaded at /var/folders/yp/fyqk4wpn64v2n0rmd040fw180000gn/T//"
+}</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">And match response.message contains "dynamicJsonResponse.json"</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

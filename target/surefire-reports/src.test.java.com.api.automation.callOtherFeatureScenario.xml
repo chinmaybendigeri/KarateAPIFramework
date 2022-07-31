@@ -1,0 +1,16 @@
+<testsuite failures="0" name="src/test/java/com/api/automation/callOtherFeatureScenario.feature" skipped="0" tests="1" time="0.648409">
+  <testcase classname="src.test.java.com.api.automation.callOtherFeatureScenario" name="To validate the full response body using Http getAll Endpoint in Json Format" time="0.648409">
+    <system-out>Given url 'http://localhost:9191' ......................................... passed
+And print '====== base url ======' ........................................ passed
+* def context = call read('postRequest.feature') .......................... passed
+And print context.jobId ................................................... passed
+Given path "/normal/webapi/update" ........................................ passed
+And headers {Accept : "application/json" , Content-Type : "application/json"} . passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def actualResponse = karate.jsonPath(response,"$[?(@.jobId == "+ context.jobId+")]") . passed
+And print actualResponse .................................................. passed</system-out>
+  </testcase>
+</testsuite>

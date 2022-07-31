@@ -1,0 +1,8 @@
+<testsuite failures="0" name="src/test/java/com/api/automation/javaScriptFunctions.feature" skipped="0" tests="1" time="0.053757">
+  <testcase classname="src.test.java.com.api.automation.javaScriptFunctions" name="To create JS functions and print the data returned by JS functions" time="0.053757">
+    <system-out>* def addTwoNum = function(x,y){ return x + y } ........................... passed
+Then print 'Result of 2 numbers =&gt; ', addTwoNum(12,12) .................... passed
+* def aNumber = function(){ return 100 } .................................. passed
+Then print 'Result of 2 numbers =&gt; ', aNumber() ........................... passed</system-out>
+  </testcase>
+</testsuite>

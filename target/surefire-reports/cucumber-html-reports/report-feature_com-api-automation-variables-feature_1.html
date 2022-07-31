@@ -1,0 +1,3042 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: com/api/automation/variables.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>My Reports</td>
+            <td>30 Jul 2022, 13:42</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">com/api/automation/variables.feature</td>
+                    <td      class="passed"    >29</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >3</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">34</td>
+
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >2</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="144973078">144ms</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">com/api/automation/variables.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">To define variable in the request and response body</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">004ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'http://localhost:9191/'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>07:29:51.790 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print '====== base url ======'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>07:29:51.795 [print] ====== base url ======</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def globalId = 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">041ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To validate the full response body using Http getAll Endpoint in Json Format</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;normal/webapi/all&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = &quot;application/json&quot;</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">014ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>07:29:51.800 request:
+1 &gt; GET http://localhost:9191/normal/webapi/all
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:9191
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+
+07:29:51.811 response time in milliseconds: 8.93
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 27 Jul 2022 01:59:51 GMT
+1 &lt; Expires: 0
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Pragma: no-cache
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+[{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:5,&quot;jobTitle&quot;:&quot;Software Engg -3&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:7,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:9,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]}]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>07:29:51.816 [print] [
+  {
+    &quot;jobId&quot;: 1,
+    &quot;jobTitle&quot;: &quot;Software Engg&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 6,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 5,
+    &quot;jobTitle&quot;: &quot;Software Engg -3&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 6,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 2,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 3,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 10,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 10,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 4,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 6,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 8,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 2,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 7,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 8,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 9,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 3,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  }
+]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('../resources/jsonResponse.json')</span>
+  
+  <span class="lead-duration duration">016ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == expectedResponse</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>com.intuit.karate.exception.KarateException: variables.feature:15 - path: $, actual: [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:5,&quot;jobTitle&quot;:&quot;Software Engg -3&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:7,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:9,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]}], expected: [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;#(title)&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]}], reason: actual and expected arrays are not the same size - 34:1</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: variables.feature:15 - path: $, actual: [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:5,&quot;jobTitle&quot;:&quot;Software Engg -3&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:7,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:9,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]}], expected: [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;#(title)&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]}], reason: actual and expected arrays are not the same size - 34:1</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>07:29:51.838 assertion failed: path: $, actual: [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:5,&quot;jobTitle&quot;:&quot;Software Engg -3&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:7,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:9,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]}], expected: [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;#(title)&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]}], reason: actual and expected arrays are not the same size - 34:1</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print expectedResponse</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print &quot;Globol id =&gt;&quot;, globalId</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">002ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'http://localhost:9191/'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>07:29:51.790 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print '====== base url ======'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>07:29:51.791 [print] ====== base url ======</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def globalId = 200</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">051ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-15">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To validate the full response body using embedded variables in response</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-16">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;normal/webapi/all&quot;</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = &quot;application/json&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>07:29:51.797 request:
+1 &gt; GET http://localhost:9191/normal/webapi/all
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:9191
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+
+07:29:51.803 response time in milliseconds: 4.10
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 27 Jul 2022 01:59:51 GMT
+1 &lt; Expires: 0
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Pragma: no-cache
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+[{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:5,&quot;jobTitle&quot;:&quot;Software Engg -3&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:7,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:9,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]},{&quot;projectName&quot;:&quot;Web App&quot;,&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;]}]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]}]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>07:29:51.811 [print] [
+  {
+    &quot;jobId&quot;: 1,
+    &quot;jobTitle&quot;: &quot;Software Engg&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 6,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 5,
+    &quot;jobTitle&quot;: &quot;Software Engg -3&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 6,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 2,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 3,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 10,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 10,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 4,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 6,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 8,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 2,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 7,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 8,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 297,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 9,
+    &quot;jobTitle&quot;: &quot;Software Engg -5&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      },
+      {
+        &quot;technology&quot;: [
+          &quot;Node Js&quot;,
+          &quot;Html&quot;,
+          &quot;Css&quot;,
+          &quot;MongoDb&quot;
+        ],
+        &quot;projectName&quot;: &quot;Web App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application and web application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 400,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  },
+  {
+    &quot;jobId&quot;: 3,
+    &quot;jobTitle&quot;: &quot;Software Engg -2&quot;,
+    &quot;project&quot;: [
+      {
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Pega&quot;
+        ],
+        &quot;projectName&quot;: &quot;Movie App&quot;
+      }
+    ],
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ]
+  }
+]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def title = 'Software Engg'</span>
+  
+  <span class="lead-duration duration">008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedResponse = read('../resources/dynamicJsonResponse.json')</span>
+  
+  <span class="lead-duration duration">021ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == expectedResponse</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-19">
+          <a>com.intuit.karate.exception.KarateException: variables.feature:27 - path: $, actual: [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:5,&quot;jobTitle&quot;:&quot;Software Engg -3&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:7,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:9,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]}], expected: [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;]}]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]}], reason: actual and expected arrays are not the same size - 34:2</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: variables.feature:27 - path: $, actual: [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:5,&quot;jobTitle&quot;:&quot;Software Engg -3&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:7,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:9,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]}], expected: [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;]}]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]}], reason: actual and expected arrays are not the same size - 34:2</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>07:29:51.845 assertion failed: path: $, actual: [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:5,&quot;jobTitle&quot;:&quot;Software Engg -3&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:10,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:6,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:7,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:8,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:297,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:9,&quot;jobTitle&quot;:&quot;Software Engg -5&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;},{&quot;technology&quot;:[&quot;Node Js&quot;,&quot;Html&quot;,&quot;Css&quot;,&quot;MongoDb&quot;],&quot;projectName&quot;:&quot;Web App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application and web application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:400,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;project&quot;:[{&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;],&quot;projectName&quot;:&quot;Movie App&quot;}],&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;]}], expected: [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;]}]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Software Engg -2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Pega&quot;]}]}], reason: actual and expected arrays are not the same size - 34:2</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print expectedResponse</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">001ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'http://localhost:9191/'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>07:29:51.794 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print '====== base url ======'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>07:29:51.795 [print] ====== base url ======</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def globalId = 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">044ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To create variables and print in console</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-26" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def int_var = 100</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def str_var = &quot;Chinmay&quot;</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def int_var_2 = int_var + 100</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print &quot;int_var =&gt;&quot;,int_var</span>
+  
+  <span class="lead-duration duration">010ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>07:29:51.817 [print] int_var =&gt; 100</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print &quot;str_var =&gt;&quot;,str_var</span>
+  
+  <span class="lead-duration duration">013ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>07:29:51.830 [print] str_var =&gt; Chinmay</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print &quot;int_var_2 =&gt;&quot;,int_var_2</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>07:29:51.837 [print] int_var_2 =&gt; 200.0</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print &quot;Globol id =&gt;&quot;, globalId</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>07:29:51.841 [print] Globol id =&gt; 200</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

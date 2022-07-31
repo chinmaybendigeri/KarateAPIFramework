@@ -1,0 +1,10 @@
+<testsuite failures="0" name="src/test/java/com/api/automation/getDescriptions.feature" skipped="0" tests="1" time="0.470521">
+  <testcase classname="src.test.java.com.api.automation.getDescriptions" name="To fetch all the job decriptions using Http getAll Endpoint in Xml Format" time="0.470521">
+    <system-out>Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/xml" ..................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

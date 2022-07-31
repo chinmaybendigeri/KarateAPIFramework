@@ -1,0 +1,53 @@
+<testsuite failures="0" name="com/api/automation/getResponse.feature" skipped="0" tests="3" time="0.907042">
+  <testcase classname="com.api.automation.getResponse" name="To fetch the response of all the job decriptions using Http getAll Endpoint in Json Format" time="0.285835">
+    <system-out>Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/json" .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="com.api.automation.getResponse" name="To fetch the response of all the job decriptions using Http getAll Endpoint in Xml Format" time="0.322602">
+    <system-out>Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/json" .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/xml" ..................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="com.api.automation.getResponse" name="To validate the schema for the response returned by the get api" time="0.298605">
+    <system-out>Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/json" .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/xml" ..................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/json" .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def innerSchema = {"projectName": '#string',"technology": '#[] #string'} . passed
+* def outerSchema = {"jobId": '#number',"jobTitle": '#string',"jobDescription": '#string',"experience": '#[] #string',"project": '#[] ##(innerSchema)'} . passed
+* def mainSchema = '#[] ##(outerSchema)' .................................. passed
+And match response == mainSchema .......................................... passed</system-out>
+  </testcase>
+</testsuite>

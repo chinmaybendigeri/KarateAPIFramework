@@ -1,0 +1,183 @@
+20:34:55.205 karate.env system property was:  
+20:34:55.264 [print] ====== base url ======
+20:34:55.578 request:
+1 > GET http://localhost:9191/normal/webapi/all
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9191
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+
+20:34:55.604 response time in milliseconds: 25.46
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Tue, 26 Jul 2022 15:04:55 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":2,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]}]
+
+20:34:55.608 [print] [
+  {
+    "jobId": 1,
+    "jobTitle": "Software Engg",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  },
+  {
+    "jobId": 2,
+    "jobTitle": "Software Engg -2",
+    "project": [
+      {
+        "technology": [
+          "Kotlin",
+          "SQL Lite",
+          "Gradle",
+          "Pega"
+        ],
+        "projectName": "Movie App"
+      }
+    ],
+    "jobDescription": "To develop andriod application",
+    "experience": [
+      "Google",
+      "Apple",
+      "Mobile Iron"
+    ]
+  }
+]
+
+20:34:55.624 karate.env system property was:  
+20:34:55.626 [print] ====== base url ======
+20:34:55.629 request:
+1 > GET http://localhost:9191/normal/webapi/all
+1 > Accept: application/xml
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9191
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+
+20:34:55.634 response time in milliseconds: 4.45
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/xml
+1 < Date: Tue, 26 Jul 2022 15:04:55 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+<List><item><jobId>1</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item><item><jobId>2</jobId><jobTitle>Software Engg -2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Pega</technology></technology></project></project></item></List>
+
+20:34:55.666 [print] <List>
+  <item>
+    <jobId>1</jobId>
+    <jobTitle>Software Engg</jobTitle>
+    <jobDescription>To develop andriod application</jobDescription>
+    <experience>
+      <experience>Google</experience>
+      <experience>Apple</experience>
+      <experience>Mobile Iron</experience>
+    </experience>
+    <project>
+      <project>
+        <projectName>Movie App</projectName>
+        <technology>
+          <technology>Kotlin</technology>
+          <technology>SQL Lite</technology>
+          <technology>Gradle</technology>
+        </technology>
+      </project>
+    </project>
+  </item>
+  <item>
+    <jobId>2</jobId>
+    <jobTitle>Software Engg -2</jobTitle>
+    <jobDescription>To develop andriod application</jobDescription>
+    <experience>
+      <experience>Google</experience>
+      <experience>Apple</experience>
+      <experience>Mobile Iron</experience>
+    </experience>
+    <project>
+      <project>
+        <projectName>Movie App</projectName>
+        <technology>
+          <technology>Kotlin</technology>
+          <technology>SQL Lite</technology>
+          <technology>Gradle</technology>
+          <technology>Pega</technology>
+        </technology>
+      </project>
+    </project>
+  </item>
+</List>
+
+20:34:55.675 karate.env system property was:  
+20:34:55.676 [print] ====== base url ======
+20:34:55.677 request:
+1 > GET http://localhost:9191/normal/webapi/all
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9191
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_291)
+
+20:34:55.681 response time in milliseconds: 3.62
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Tue, 26 Jul 2022 15:04:55 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":2,"jobTitle":"Software Engg -2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Pega"]}]}]
+
+20:28:19.518 assertion failed: path: $[0].jobId, actual: 1, expected: '#string', reason: not a string
+chnology":["Kotlin","SQL Lite","Gradle"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]},{"jobId":2,"jobTitle":"Software Engg -2","project":[{"technology":["Kotlin","SQL Lite","Gradle","Pega"],"projectName":"Movie App"}],"jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"]}], expected: {jobId=#number, jobTitle=#string, jobDescription=#string, experience=#[] #string, project=#[] #object}, reason: actual value is not map-like
+bject}, reason: actual value is not map-like
+ron"
+    ]
+  }
+]
+
+ion: keep-alive
+1 < Content-Type: application/xml
+1 < Date: Sun, 24 Jul 2022 13:54:24 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+<List><item><jobId>1</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item></List>
+

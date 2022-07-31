@@ -1,0 +1,21 @@
+<testsuite failures="1" name="src/test/java/com/api/automation/queryParams.feature" skipped="0" tests="1" time="0.567897">
+  <testcase classname="src.test.java.com.api.automation.queryParams" name="To find the jobDescription using query parameters" time="0.567897">
+    <failure message="queryParams.feature:14 - status code was: 400, expected: 200, response time: 4, url: http://localhost:9191/normal/webapi/find?id=%23%28createJobId%29&amp;jobTitle=%23%28createJobTitle%29, response: {&quot;path&quot;:&quot;/normal/webapi/find&quot;,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \&quot;(createJobId)\&quot;&quot;,&quot;timestamp&quot;:&quot;2022-07-27T02:28:15.514+0000&quot;,&quot;status&quot;:400}">* def createJob = call read('postRequest.feature') ........................ passed
+* def createJobId = createJob.jobId ....................................... passed
+* def createJobTitle = createJob.jobTitle ................................. passed
+Given url 'http://localhost:9191' ......................................... passed
+And path '/normal/webapi/find' ............................................ passed
+And header Content-type = 'application/json' .............................. passed
+And param id = '#(createJobId)' ........................................... passed
+And param jobTitle = '#(createJobTitle)' .................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: queryParams.feature:14 - status code was: 400, expected: 200, response time: 4, url: http://localhost:9191/normal/webapi/find?id=%23%28createJobId%29&amp;jobTitle=%23%28createJobTitle%29, response: {"path":"/normal/webapi/find","error":"Bad Request","message":"Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"(createJobId)\"","timestamp":"2022-07-27T02:28:15.514+0000","status":400}
+	at ✽.Then status 200 (queryParams.feature:14)
+
+And print response ........................................................ skipped
+And match response.jobId == newId ......................................... skipped</failure>
+  </testcase>
+</testsuite>

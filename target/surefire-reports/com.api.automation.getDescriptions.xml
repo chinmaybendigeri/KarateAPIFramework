@@ -1,0 +1,24 @@
+<testsuite failures="0" name="com/api/automation/getDescriptions.feature" skipped="0" tests="2" time="0.898701">
+  <testcase classname="com.api.automation.getDescriptions" name="To fetch all the job decriptions using Http getAll Endpoint in Json Format" time="0.449261">
+    <system-out>Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/json" .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.api.automation.getDescriptions" name="To fetch all the job decriptions using Http getAll Endpoint in Xml Format" time="0.44944">
+    <system-out>Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/json" .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/xml" ..................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

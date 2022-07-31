@@ -1,0 +1,22 @@
+<testsuite failures="1" name="src/test/java/com/api/automation/variables.feature" skipped="0" tests="1" time="0.581166">
+  <testcase classname="src.test.java.com.api.automation.variables" name="To validate the full response body using embedded variables in response" time="0.581166">
+    <failure message="variables.feature:27 - evaluation (js) failed: titlesx, javax.script.ScriptException: ReferenceError: &quot;titlesx&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">Given url 'http://localhost:9191/' ........................................ passed
+And print '====== base url ======' ........................................ passed
+And def globalId = 200 .................................................... passed
+Given path "normal/webapi/all" ............................................ passed
+And header Accept = "application/json" .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def title = 'Software Engg' ............................................. passed
+* def expectedResponse = read('../resources/dynamicJsonResponse.json') .... passed
+And match response == expectedResponse .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: variables.feature:27 - evaluation (js) failed: titlesx, javax.script.ScriptException: ReferenceError: "titlesx" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+	at ✽.And match response == expectedResponse (variables.feature:27)
+
+And print expectedResponse ................................................ skipped</failure>
+  </testcase>
+</testsuite>

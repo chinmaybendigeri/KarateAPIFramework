@@ -1,0 +1,11 @@
+<testsuite failures="0" name="com/api/automation/fileUpload.feature" skipped="0" tests="1" time="0.029002">
+  <testcase classname="com.api.automation.fileUpload" name="To upload the file present locally" time="0.029002">
+    <system-out>Given url 'http://localhost:9191' ......................................... passed
+Given path "/normal/webapi/upload" ........................................ passed
+And multipart file file = { read : "../resources/dynamicJsonResponse.json", filename : "dynamicJsonResponse.json", Content-type : "multipart/form"} . passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.message contains "dynamicJsonResponse.json" ............ passed</system-out>
+  </testcase>
+</testsuite>
